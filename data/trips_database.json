@@ -16,5 +16,14 @@
         "note": "",
         "status": "Budget is high. You can enjoy a luxurious trip with this budget.",
         "per_day_budget": 10000.0
+    },
+    {
+        "trip_name": "Probashi",
+        "destination": "Switzerland",
+        "trip_days": 7,
+        "total_budget": 100000.0,
+        "note": "",
+        "status": "Budget is high. You can enjoy a luxurious trip with this budget.",
+        "per_day_budget": 14285.714285714286
     }
 ]
