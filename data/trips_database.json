@@ -48,5 +48,20 @@
         "status": "Budget is high. You can enjoy a luxurious trip with this budget.",
         "per_day_budget": 16666.666666666668,
         "activities": {}
+    },
+    {
+        "trip_name": "Boom",
+        "destination": "Jaflong",
+        "country": "Bd",
+        "trip_days": 2,
+        "day_range": [
+            1,
+            2
+        ],
+        "total_budget": 70000.0,
+        "note": "",
+        "status": "Budget is high. You can enjoy a luxurious trip with this budget.",
+        "per_day_budget": 35000.0,
+        "activities": {}
     }
 ]

@@ -3,7 +3,6 @@ from TripServices.budget import calculate_per_day_budget, get_budget_status
 from TripServices.helpers import ask_int, ask_float, ask_day_range
 
 
-
 def get_trip_details():
     trip_name = input("Enter the name of your trip: ")
     destination = input("Enter your destination: ")
