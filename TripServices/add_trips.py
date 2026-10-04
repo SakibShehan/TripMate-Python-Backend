@@ -1,16 +1,6 @@
 
 from TripServices.budget import calculate_per_day_budget, get_budget_status
-
-
-
-def ask_day_range(trip_days):
-    """Ask for a (start_day, end_day) pair and return it as a tuple."""
-    while True:
-        start_day = int(input("Main plan start day: "))
-        end_day = int(input("Main plan end day: "))
-        if 1 <= start_day <= end_day <= trip_days:
-            return (start_day, end_day)
-        print(f"Days must be between 1 and {trip_days}, and start can't be after end.")
+from TripServices.helpers import ask_int, ask_float, ask_day_range
 
 
 
@@ -18,9 +8,9 @@ def get_trip_details():
     trip_name = input("Enter the name of your trip: ")
     destination = input("Enter your destination: ")
     country = input("Enter the country (or a tag like 'beach'): ").strip().title()
-    trip_days = int(input("Enter the number of days for your trip: "))
+    trip_days = ask_int("Enter the number of days for your trip: ")
     day_range = ask_day_range(trip_days)
-    total_budget = float(input("Enter your total budget for the trip: "))
+    total_budget = ask_float("Enter your total budget for the trip: ")
 
     note = ""
     if input("\nAdd a note? (yes/no): ").lower() == "yes":
