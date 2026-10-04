@@ -1,12 +1,16 @@
 import json
 import os
+import pathlib
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA_FILE = os.path.join(BASE_DIR, "data", "trips_database.json")
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# DATA_FILE = os.path.join(BASE_DIR, "data", "trips_database.json")
+
+BASE_DIR = pathlib.Path(__file__).parent.parent
+DATA_FILE = BASE_DIR / "data" / "trips_database.json"
 
 
 def load_trips():
-    if not os.path.exists(DATA_FILE):
+    if not DATA_FILE.exists():
         return []
     try:
         with open(DATA_FILE, "r") as file:
