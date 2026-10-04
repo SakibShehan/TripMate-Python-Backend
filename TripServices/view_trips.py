@@ -5,6 +5,7 @@ def display_trip_details(trips):
 
     for trip in trips:
         print("\nTrip Name:", trip["trip_name"])
+        print("Trip Code:", trip["destination"][0:3].upper())
         print("Destination:", trip["destination"])
         print("Country/Tag:", trip.get("country", "Not set"))
         print("Number of Days:", trip["trip_days"])
